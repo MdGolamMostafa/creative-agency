@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center top;
+  }
+  .text-color{
+      color: #ffff;
+  }
+  /* .header .logo {
+    height: 50px;
+  } */
+  .nav {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  /* .nav li {
+    display: inline;
+    margin-left: 60px;
+  }
+   */

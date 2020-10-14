@@ -1,0 +1,14 @@
+.services-bg{
+    border: none;
+    background-color:#F0FFF0;
+    transition: all 1s ease 0s;
+    border-radius: 11px;
+    
+}
+
+.services-bg:hover{
+    box-shadow: 3px 3px 8px lightgrey;
+    background: #FFFFFF;
+    transform: scale(1.1);
+}
+
