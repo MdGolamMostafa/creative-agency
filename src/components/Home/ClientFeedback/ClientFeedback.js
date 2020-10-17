@@ -3,14 +3,6 @@ import FeedbackCard from './FeedbackCard/FeedbackCard';
 
 const ClientFeedback = () => {
 
-    // const feedbackAdded = () => {
-    //     fetch("http://localhost:5000/", {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json'},
-    //         body: JSON.stringify(ClientFeedbackInfo)
-    //     })
-    // }
-
     const [feedback ,setFeedback] = useState([]);
 
             useEffect(() => {
@@ -26,7 +18,6 @@ const ClientFeedback = () => {
     return (
 
         <div className ='container mt-5 mb-5'>
-            {/* <button onClick={feedbackAdded}>feedbackAdded</button> */}
                 <h2 className ='text-center'><span style = {{color: '#171B4E'}}>Clients</span> <span style = {{color: '#7AB259'}}>Feedback</span></h2>
                 <div className = 'row d-flex justify-content-center mt-5'>
                     {

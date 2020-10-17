@@ -32,13 +32,7 @@ const Navbar = () => {
                         <Link to="/admin/">Contact us</Link>
                     </ul>
                     <ul >
-
-                        
-                            
-                                <Link to="/login"><button className=" btn btn-dark  px-4">Login</button></Link>
-                       
-
-                        
+                    <Link to="/login"><button className=" btn btn-dark  px-4">Login</button></Link>
                     </ul>
                 </div>
                 

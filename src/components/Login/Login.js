@@ -15,14 +15,6 @@ const Login = () => {
     if (firebase.apps.length === 0) {
       firebase.initializeApp(firebaseConfig);
     }
-
-    //  const sessionStorage = () => {
-    //   firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
-    //     sessionStorage.getItem('token',idToken)
-    //   }).catch(function(error) {
-    //     // Handle error
-    //   });
-    //  }
       const handleGoogleSignIn = () => {
             var  provider = new firebase.auth.GoogleAuthProvider();
             firebase.auth().signInWithPopup(provider).then(function(result) {

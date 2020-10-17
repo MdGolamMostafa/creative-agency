@@ -3,7 +3,6 @@ import { UserContext } from '../../../App';
 import Order from '../Order/Order';
 import ServicesList from '../ServicesList/ServicesList';
 import Sidebar from '../Sidebar/Sidebar';
-import {Row,Col} from 'react-bootstrap';
 import Navbar from '../../Home/Navbar/Navbar';
 
 const Dashboard = () => {
@@ -31,25 +30,26 @@ const Dashboard = () => {
         .then(response => response.json())
         .then(data => setCustomer(data));
     },[]);
-    
+
+  
     return (
         <div  className="mx-3">
             <Navbar></Navbar>
-            <h2 className = "text-center  mb-5">dashboard</h2>
-            <Row>
-                <Col md={4}>
-                    <Sidebar/>
-                </Col>
-
-                <Col md={8}>
-                    {
-                        <Order></Order>
-                    }
-                    {
-                        admin && <ServicesList></ServicesList>
-                    }
-                </Col>
-            </Row>
+                <div className="row">
+                    <div className = 'col-md-4'>
+                        <Sidebar/>
+                    </div>               
+                    <div className="col-md-8">
+                        <div className = 'col-md-8'>
+                                {
+                                    <Order></Order>
+                                }
+                                {
+                                    admin && <ServicesList></ServicesList>
+                                }
+                        </div>
+                    </div>   
+                </div>
         </div>
     );
 };

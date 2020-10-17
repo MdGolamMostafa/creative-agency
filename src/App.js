@@ -34,9 +34,9 @@ function App() {
                                                 <CreateAdmin></CreateAdmin>
                         </Route>
 
-                        <PrivateRoute path="/order">
+                        <Route path="/order">
                                                 <Dashboard></Dashboard>
-                        </PrivateRoute>
+                        </Route>
                         <Route path="/serviceList">
                                                 <ServiceList></ServiceList>
                         </Route>
@@ -44,7 +44,7 @@ function App() {
                                                 <AddFeedback></AddFeedback>
                         </Route>
                         <Route path="/adminServiceList">
-                                                <Dashboard></Dashboard>
+                                               
                         </Route>
                         <Route path="/addService">
                                                 <AddService></AddService>
