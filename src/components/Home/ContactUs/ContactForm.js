@@ -9,8 +9,8 @@ const ContactForm = () => {
                         Let us handle your <br/> project, professionally.
                     </h1>
                     <p><small>
-                        With well written codes, we 
-                        build amazing apps for all platforms,
+                        With well written codes, we <br/>
+                        build amazing apps for all platforms,<br/>
                         mobile and web apps in general.
                     </small></p>
                 </div>
@@ -26,7 +26,7 @@ const ContactForm = () => {
                             <textarea name="" className="form-control" id="" cols="30" rows="10" placeholder="Your message"></textarea>
                         </div>
                         <div className="form-group ">
-                            <button type="button" style = {{backgroundColor: "#111430",color: "#FFFFFF",borderRadius:"5px"}} >Send</button>
+                            <button className ='btn btn-dark  px-4' type="button"  >Send</button>
                         </div>
                     </form>
                 </div>

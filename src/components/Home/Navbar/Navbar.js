@@ -1,9 +1,12 @@
-import React from 'react';
-// import { Link } from 'react-router';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
-
+import { UserContext } from '../../../App';
+import * as firebase from "firebase/app";
 import './Navbar.css'
 const Navbar = () => { 
+
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    
     return (
         <div className="container fluid mb-5 pb-3">
             <div className="row ">
@@ -14,22 +17,28 @@ const Navbar = () => {
                         </Link>                   
                     </ul>
 
-                    <ul className ="active ml-5">
-                        <Link to="/home">Home</Link>
+                    <ul className ="active ml-5 ">
+                        <li>
+                            <Link to="#">Home</Link>
+                        </li>
                     </ul>
                     <ul>
-                        <Link to="/home">Our Portfolio</Link>
+                        <Link to="#">Our Portfolio</Link>
                     </ul>
                     <ul>
-                        <Link to="/home">Our Team</Link>
+                        <Link className = "nav link" to="/dashboard">Our Team</Link>
                     </ul>
                     <ul>
-                        <Link to="/home">Contact us</Link>
+                        <Link to="/admin/">Contact us</Link>
                     </ul>
                     <ul >
-                        <button className=" btn btn-dark">
-                            <Link to="/login">Login</Link>
-                        </button>
+
+                        
+                            
+                                <Link to="/login"><button className=" btn btn-dark  px-4">Login</button></Link>
+                       
+
+                        
                     </ul>
                 </div>
                 
