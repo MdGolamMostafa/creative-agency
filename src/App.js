@@ -9,6 +9,7 @@ import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import AddFeedback from "./components/Dashboard/AddFeedback/AddFeedback";
 import AddService from "./components/Dashboard/AddService/AddService";
 import ServiceList from "./components/Dashboard/ServicesList/ServicesList";
+import AdminServiceList from "./components/Dashboard/AdminServiceList/AdminServiceList";
 export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -44,7 +45,7 @@ function App() {
                                                 <AddFeedback></AddFeedback>
                         </Route>
                         <Route path="/adminServiceList">
-                                               
+                                    <AdminServiceList></AdminServiceList>
                         </Route>
                         <Route path="/addService">
                                                 <AddService></AddService>
