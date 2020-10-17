@@ -37,13 +37,13 @@
 //         formData.append('details', orderInfo.details);
 //         formData.append('price', orderInfo.price);
 //         formData.append('icon', service.image.img);
-//         fetch('http://localhost:5000/addOrder', {
+//         fetch('https://stark-plains-75469.herokuapp.com/addOrder', {
 //             method: 'POST',
 //             body: formData
 //         })
 //             .then(response => response.json())
 //             .then(data => {
-                
+
 //                 if (data === false) {
 //                     document.getElementById('orderForm').innerHTML = '<h3 class="text-center text-success mt-5"><b>Orderd Successfully</b></h3>';
 //                 }
