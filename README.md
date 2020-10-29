@@ -9,6 +9,9 @@
 ##### Added three different services like Graphics, Web and Mobile Application, Web developer.
 
 
+### Technologies:
+### React JS , MongoDB , Node JS , Rest API , React Router , Heroku , Firebase,React Bootstrap , HTML , CSS
+
 
 
 [Link to live website](https://creative-agency-5d297.web.app/)
