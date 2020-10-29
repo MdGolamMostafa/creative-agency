@@ -1,5 +1,5 @@
-Travel Guru Overview:
- It is a full-stack and responsive agency management web application for admin and any
+## Travel Guru Overview:
+### It is a full-stack and responsive agency management web application for admin and any
 users.
  Admin can add desired services and show dashboard also showing to user his/her
 dashboard.
